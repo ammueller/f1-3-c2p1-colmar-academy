@@ -1,0 +1,547 @@
+/* --universal-- */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,400,500,700');
+
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(45, 45, 45);
+}
+
+body {
+  font-size: 14px;
+}
+
+#title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+#sub {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+#quote {
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+a {
+  color: rgb(244, 179, 26);
+}
+
+
+/* --header-- */
+
+header {
+  display: flex;
+  height: 64px;
+  width: 100%;
+  align-items: center;
+}
+
+header .logo {
+  display: inline-flex;
+  flex-grow: 1;
+  width: auto;
+  padding-left: 24px;
+}
+
+header .logo img {
+  height: 32px;
+}
+
+header .logo span {
+  display: flex;
+  line-height: 32px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+header h1 {
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav span {
+  display: flex;
+  padding-left: 16px;
+}
+
+header nav #end {
+  padding-right: 24px;
+}
+
+header nav span a {
+  text-decoration: none;
+  color: rgb(244, 179, 26);
+  transition: all 300ms ease;
+}
+
+header nav span a:hover {
+  color: rgb(45, 45, 45);
+}
+
+header .mobile-header {
+  display: flex;
+  justify-content: space-around;
+  height: 64px;
+  background-color: white;
+  align-items: center;
+  width: 100%;
+}
+
+/*-- banner --*/
+
+.banner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: rgb(225, 225, 225);
+  align-items: center;
+}
+
+.banner img {
+  width: 60%;
+  height: auto;
+  padding: 32px 24px;
+}
+
+.banbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.banbox #title {
+  padding-bottom: 15px;
+}
+
+.banbox .button {
+  display: flex;
+  padding: 8px auto;
+  background-color: rgb(244, 179, 26);
+  width: 12rem;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all ease 200ms;
+  margin-top: 20px;
+}
+
+.banbox .button:hover {
+  box-shadow: 0px 0px 16px -5px rgba(66,66,66,1);
+}
+
+.banbox .button span {
+  color: white;
+  padding: 12px 0;
+}
+
+/*-- info section --*/
+
+.info {
+  display: flex;
+}
+
+.info .info-left {
+  width: 60%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.info .info-left img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 32px;
+}
+
+#title2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.info .info-left #quote,
+.info .info-left #quoter {
+  padding-top: 24px;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: auto;
+}
+
+#practice {
+  padding-top: 32px;
+}
+
+.info-cards .card {
+  display: flex;
+  align-items: center;
+}
+
+.info-cards img {
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+#orientation {
+  padding-top: 0;
+}
+
+.info-cards .card-info span {
+  display: block;
+  padding-top: 8px;
+}
+
+.info-cards .card-info span a {
+  transition: all 300ms ease;
+}
+
+.info-cards .card-info span a:hover {
+    color: rgb(45, 45, 45);
+}
+
+#highlight {
+  background-color: rgb(225, 225, 225);
+}
+
+
+/*-- course tiles --*/
+
+.course-tiles {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+  background-color: rgb(225, 225, 225);
+}
+
+.course-tiles .title {
+  display: flex;
+  justify-content: center;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 3.5rem 5rem 3.5rem;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 29%;
+  flex-grow: 1;
+  background-color: white;
+  margin: 1rem;
+  min-width: 29%;
+  transition: all ease 400ms;
+}
+
+.tile-img {
+  width: 100%;
+  height: auto;
+}
+
+.tile-img img {
+  width: 100%;
+  height: auto;
+}
+
+.tile-caption {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.tile-caption #sub {
+  padding-bottom: 12px;
+  transition: all ease 200ms;
+}
+
+.tile-caption #quote {
+  padding-bottom: 8px;
+}
+
+.tile:hover {
+  box-shadow: 0px 0px 16px 4px rgba(65, 65, 65, 0.7);
+  cursor: pointer;
+}
+
+.tile-caption #sub:hover {
+  color: rgb(244, 179, 26);
+}
+
+/*-- thesis --*/
+
+.thesis {
+  display: block;
+}
+
+.thesis .thesis-title {
+  display: flex;
+  justify-content: center;
+}
+
+.thesis .thesis-title #title {
+  padding: 32px 0;
+}
+
+.thesis-content {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.thesis .thesis-left {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.thesis .thesis-left video {
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+.thesis-left .thesis-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-left .thesis-block #sub {
+  padding-bottom: 8px;
+}
+
+.thesis-left .thesis-block #quote {
+  padding-bottom: 32px;
+}
+
+#thesis-link {
+  text-decoration: none;
+}
+
+/*-- footer --*/
+
+footer {
+  display: flex;
+  border-top: 1px solid rgb(229, 229, 229);
+  padding: 16px 24px 32px 24px;
+}
+
+footer .footer-right {
+  display: flex;
+  flex-grow: 1;
+}
+
+footer .footer-left span {
+  padding: 0 3px;
+}
+
+/*-- media queries --*/
+/*-- hide elements from desktop --*/
+@media only screen and (min-width: 640px) {
+
+  header .mobile-header {
+    display: none; /*-- hide mobile menu from desktop --*/
+  }
+
+  .banner .banbox #mobile-start {
+    display: none;
+  }
+
+  #mobile-img {
+    display: none;
+  }
+
+  #mobile-course-grid {
+    display: none;
+  }
+
+}
+
+
+/*-- mobile --*/
+@media only screen and (max-width: 640px) {
+
+  header .logo,
+  header nav {
+    display: none;
+  }
+
+  /*-- mobile banner --*/
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner img {
+    display: flex;
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .banner .banbox {
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .banner .banbox .button {
+    display: none;
+  }
+
+  .banner .banbox .mobile-start-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+.banner .banbox #mobile-start {
+  display: flex;
+  width: 90%;
+}
+
+/*-- mobile info section --*/
+
+.info .info-left {
+  display: none;
+}
+
+
+#desktop-img, #orientation {
+  display: none;
+}
+
+#highlight {
+  background-color: white;
+}
+
+.info {
+  margin: auto;
+  padding: 0;
+}
+
+.info .info-cards {
+  flex-grow: 1;
+  margin: 1rem;
+  padding: 0;
+  border-style: none;
+}
+
+.info .info-cards .card {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info .info-cards .card .card-mobile-img {
+  max-width: 100%;
+  margin: 0;
+}
+
+.info .info-cards .card .card-mobile-img img {
+  width: 100%;
+  padding: 0;
+}
+
+#mobile-img {
+  display: inline;
+}
+
+.info .info-cards .card .card-info {
+  padding: 0.5rem 1rem 2rem 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+/*-- mobile course tiles --*/
+
+.course-grid {
+  display: none;
+}
+
+.course-tiles .title {
+  padding-bottom: 1.5rem;
+}
+
+.course-tiles {
+  background-color: white;
+  padding: 0.5rem 1rem;
+}
+
+#mobile-course-grid {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mobile-course-box {
+  background-color: rgb(225, 225, 225);
+  padding: 2rem;
+  margin: 0.5rem;
+}
+
+.mobile-course-box span {
+  color: rgb(45, 45, 45);
+}
+
+#mobile-course-grid a {
+  text-decoration: none;
+}
+
+.mobile-course-box {
+  transition: all ease 300ms;
+}
+
+.mobile-course-box span {
+  transition: all ease 200ms;
+}
+
+.mobile-course-box span:hover {
+  color: rgb(244, 179, 26);
+}
+
+.mobile-course-box:hover {
+  box-shadow: 0px 0px 12px 2px rgba(65, 65, 65, 0.7);
+  cursor: pointer;
+}
+
+/*-- mobile thesis --*/
+
+.thesis .thesis-left .thesis-block {
+  display: none;
+}
+
+.thesis .info-cards {
+  display: none;
+}
+
+.thesis .thesis-left {
+  width: 100%;
+}
+
+/*-- footer --*/
+
+footer .footer-left {
+  display: none;
+}
+
+footer .footer-right {
+  padding-top: 1.5rem;
+}
+
+}
